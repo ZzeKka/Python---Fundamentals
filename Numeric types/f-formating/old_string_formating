@@ -1,0 +1,28 @@
+""" Warming, this first formating is garbage"""
+# %-formating (this formatting sucks heavy balls)
+
+name = "Ze"
+bodycount = 0
+print("Hello, %s." % name) 
+
+apelido = "Gomes"
+print("I said my fucking name is %s %s!" % (name, apelido))
+
+
+""" str-format """
+# str.format() [decent...]
+print("Hello, my name is {} and I have banged {} girls in my life.".format(name,bodycount))
+
+# reference by number
+print("Hello, my name is {1} and I have banged {0} girls in my life.".format(bodycount,name))
+
+#object frendly
+hero = {'name':'Ze', 'bodycount':0}
+print("Hello, {name}, stop being lazy and go fuck more than {bodycount}".format(name=hero['name'],bodycount=hero['bodycount']))
+
+#dictionary trick
+hero = {'name':'Ze', 'bodycount':0}
+print("Hello, {name}, stop being lazy and go fuck more than {bodycount}".format(**hero))
+
+#Conclusion, 1st one is garbage, 2nd one is decent but with everything that's not in dictionary form it's easy to make mistakes and can take a lot of time if there are lots of parameters
+

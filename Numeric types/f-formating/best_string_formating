@@ -1,0 +1,62 @@
+"""====== BEST NEW WAY -> f-formating ======"""
+
+name = "Ze"
+age = 24
+
+#standard (can also use big F)
+print(f"Hello {name}, you are {age} and you're a beast")
+
+#operation
+print(f"{8 * age}")
+
+#call fuctions
+print(f"{name.lower()}, is funny")
+
+#classes
+class Comedian:
+    def __init__(self, first_name,last_name,age):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+    def __str__(self):
+        return f"{self.first_name} {self.last_name} is {self.age}."
+    
+    def __repr__(self):
+        return f"{self.first_name} {self.last_name} is {self.age}. Surprise!"
+
+new_comedian = Comedian("Ze","Gomes","74")
+
+#method __str__ is default, call __repr__ with !r
+print(f"{new_comedian}")
+
+print(f"{new_comedian!r}")
+
+
+#Multiline f-Strings (need an f in each line)
+name = "Zeka"
+profession = "data scientist"
+country = "Portugal"
+message = (
+     f"Hi {name}." 
+     f"You are a {profession}."  
+     f"You were in {country}." 
+    )
+print(message)
+
+#changing lines
+message = f"""
+     Hi {name}. 
+     You are a {profession}. 
+     You were in {country}. 
+    """
+print(message)
+
+#f-strings are much faster since they are evaluated at runetime
+
+# use \"
+f"The \"comedian\" is {name}, aged {age}."
+
+#in the dictionaries be careful use double quotes in f and quotation in atributes and values
+
+#Brace appear in string use double braces
+print(f"{{70 + 4}}")
