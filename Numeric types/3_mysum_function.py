@@ -1,23 +1,27 @@
 #implementing sum function with dynamic arguments
 
+#Sum dinamicly placed numbers
 def mysum(*numbers):
     sum = 0
     for n in numbers:
         sum += n
     return sum
 
+#Sum function with a starting point argument
 def mysum_2(numbers,start = 0):
     sum = start
     for n in numbers:
         sum += n
     return sum 
 
+#average beetween an array of numbers
 def average(numbers):
     sum = 0
     for n in numbers:
         sum += n
     return sum / len(numbers)
 
+#return a tuple with information related to a string
 def word_info(string):
     data = ()
     words = string.split()
@@ -33,6 +37,7 @@ def word_info(string):
     data = (min_len, max_len, all_len/len(words))
     return data
 
+#takes a list of data types and sums the ones that are possible to sum
 def objectsum(list):
     sum = 0
     for n in list:
