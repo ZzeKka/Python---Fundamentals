@@ -1,5 +1,4 @@
-
-print(int(0x50))
-
+s = 'abcdefgh'
+print('.'.isalnum())
         
         
