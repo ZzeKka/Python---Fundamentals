@@ -1,4 +1,5 @@
-s = 'abcdefgh'
-print('.'.isalnum())
-        
-        
+
+
+    
+    
+    
